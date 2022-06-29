@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { useParams } from 'react-router-dom'
 import themoviedbApi from '../../api/themoviedbApi'
-import apiConfig from '../../api/apiConfig'
+// import apiConfig from '../../api/apiConfig'
 
 const Videos = props => {
 

@@ -1,5 +1,4 @@
 import React, { useCallback, useEffect, useState } from 'react'
-import PropTypes from 'prop-types'
 import './movie-grid.scss'
 import MovieCard from '../movie-card/MovieCard'
 import { useHistory, useParams } from 'react-router-dom'
@@ -101,15 +100,15 @@ const MovieSearch = (props) => {
 
 
     );
-    const search = () => {
-        console.log(`/${category[props.category]}/search/${keyword}`)
-    }
+    // const search = () => {
+    //     console.log(`/${category[props.category]}/search/${keyword}`)
+    // }
     useEffect(() => {
         const enterEvent = (e) => {
             e.preventDefault();
             if (e.keyCode === 13) {
                 goToSearch()
-                search()
+                // search()
             }
         }
         document.addEventListener('keyup', enterEvent)
